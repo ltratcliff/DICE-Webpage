@@ -1,5 +1,5 @@
 FROM --platform=arm64 nginx:alpine
-COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 COPY . /app
 WORKDIR /app
 EXPOSE 80
