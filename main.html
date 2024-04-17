@@ -1,39 +1,63 @@
 <div class="container-fluid">
-    <div class="row justify-content-center" id="cardItems">
-        <div class="card col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3" style="margin: 10px;">
-            <img src="assets/aws/vpc.svg" class="card-img-top img-thumbnail" alt="...">
+    <div class="row row-cols-4 justify-content-center" id="cardItems">
+        <div class="card col" style="margin: 10px;">
+            <img src="assets/images/aws/vpc.svg" class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
                 <h5 class="card-title">AWS VPC</h5>
                 <p class="card-text">A VPC is a virtual network that closely resembles a traditional network that you'd operate in your own data center.</p>
             </div>
             <div class="card-footer text-body-secondary" style="background-color: #FFF;">
                 <a href="javascript:void(0)" onclick="vpcModal()" style="margin: 5px;" class="text-decoration-none">
-                    <i class="fa-lg fa fa-circle-info" style="color: #818181;"></i>
+                    <i class="fa-2x fa fa-circle-info" style="color: #818181;"></i>
+                </a>
+                <a href="javascript:void(0)" onclick="vpcCodeModal()" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-code" style="color: #818181;"></i>
                 </a>
                 <a href="https://code.ssf.sclzdev.net/eis-sif-data-team/data-iac-environment/platform/infrastructure/-/tree/development/modules/aws/aws_vpc?ref_type=heads" target="_blank" style="margin: 5px;" class="text-decoration-none">
-                    <i class="fa-lg fa-brands fa-gitlab" style="color: #818181;"></i>
+                    <i class="fa-2x fa-brands fa-gitlab" style="color: #818181;"></i>
+                </a>
+                <a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html" target="_blank" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-external-link" style="color: #818181;"></i>
+                </a>
+                <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc" target="_blank" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-book" style="color: #818181;"></i>
+                </a>
+                <a href="mailto:'test@email.com'" target="_blank" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-question" style="color: #818181;"></i>
                 </a>
             </div>
         </div>
 
-        <div class="card col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3" style="margin: 10px;">
-            <img src="assets/aws/ec2.svg" class="card-img-top img-thumbnail" alt="...">
+        <div class="card col" style="margin: 10px;">
+            <img src="assets/images/aws/ec2.svg" class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
                 <h5 class="card-title">AWS EC2</h5>
                 <p class="card-text">Amazon EC2 provides secure, resizable compute in the cloud, offering the broadest choice of processor, storage, networking, OS, and purchase model.</p>
             </div>
             <div class="card-footer text-body-secondary" style="background-color: #FFF;">
                 <a href="javascript:void(0)" onclick="ec2Modal()" style="margin: 5px;" class="text-decoration-none">
-                    <i class="fa-lg fa fa-circle-info" style="color: #818181;"></i>
+                    <i class="fa-2x fa fa-circle-info" style="color: #818181;"></i>
                 </a>
                 <a href="https://code.ssf.sclzdev.net/eis-sif-data-team/data-iac-environment/platform/infrastructure/-/tree/development/modules/aws/aws_bastion?ref_type=heads" target="_blank" style="margin: 5px;" class="text-decoration-none">
-                    <i class="fa-lg fa-brands fa-gitlab" style="color: #818181;"></i>
+                    <i class="fa-2x fa-brands fa-gitlab" style="color: #818181;"></i>
+                </a>
+                <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html" target="_blank" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-external-link" style="color: #818181;"></i>
+                </a>
+                <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance" target="_blank" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-book" style="color: #818181;"></i>
+                </a>
+                <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance" target="_blank" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-code" style="color: #818181;"></i>
+                </a>
+                <a href="mailto:'test@email.com'" target="_blank" style="margin: 5px;" class="text-decoration-none">
+                    <i class="fa-2x fa fa-question" style="color: #818181;"></i>
                 </a>
             </div>
         </div>
 
-        <div class="card col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3" style="margin: 10px;">
-            <img src="assets/aws/s3.svg" class="card-img-top img-thumbnail" alt="...">
+        <div class="card col" style="margin: 10px;">
+            <img src="assets/images/aws/s3.svg" class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
                 <h5 class="card-title">AWS S3</h5>
                 <p class="card-text">Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance.</p>
@@ -48,8 +72,8 @@
             </div>
         </div>
 
-        <div class="card col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3" style="margin: 10px;">
-            <img src="assets/aws/rds.svg" class="card-img-top img-thumbnail" alt="...">
+        <div class="card col" style="margin: 10px;">
+            <img src="assets/images/aws/rds.svg" class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
                 <h5 class="card-title">AWS RDS</h5>
                 <p class="card-text">Amazon RDS is an easy to manage relational database service optimized for total cost of ownership. It is simple to set up, operate, and scale with demand.</p>
@@ -64,8 +88,8 @@
             </div>
         </div>
 
-        <div class="card col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3" style="margin: 10px;">
-            <img src="assets/aws/psql.svg" class="card-img-top img-thumbnail" alt="...">
+        <div class="card col" style="margin: 10px;">
+            <img src="assets/images/aws/psql.svg" class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
                 <h5 class="card-title">AWS Postgresql</h5>
                 <p class="card-text">PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.</p>
@@ -80,8 +104,8 @@
             </div>
         </div>
 
-        <div class="card col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3" style="margin: 10px;">
-            <img src="assets/aws/redshift.svg" class="card-img-top img-thumbnail" alt="...">
+        <div class="card col" style="margin: 10px;">
+            <img src="assets/images/aws/redshift.svg" class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
                 <h5 class="card-title">AWS Redshift</h5>
                 <p class="card-text">Amazon Redshift is a fast, fully managed cloud data warehouse that makes it simple and cost-effective to analyze all your data.</p>
@@ -133,6 +157,23 @@
             <li><a href="https://aws.amazon.com/vpc/" target="_blank">Amazon VPC</a></li>
             <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html" target="_blank">Amazon VPC User Guide</a></li>
         </ul>
+    </div>
+</div>
+
+<div id=vpcCodeModal class=modal>
+    <div class=modal-content>
+        <span class=close>&times;</span>
+        <h1>Terraform VPC Example</h1>
+        <pre><code class="tf">
+            resource "aws_vpc" "main" {
+                cidr_block = "10.0.0.0/16"
+                enable_dns_support = true
+                enable_dns_hostnames = true
+                tags = {
+                    Name = "main"
+                }
+            }
+        </code></pre>
     </div>
 </div>
 
