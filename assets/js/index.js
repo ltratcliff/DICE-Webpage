@@ -51,6 +51,35 @@ async function openAboutContent() {
   closeNav();
 }
 
+async function openServicesContent() {
+  const contentDiv = document.getElementById("mainbody");
+  contentDiv.innerHTML = await fetchHtmlAsText("services.html");
+  closeNav();
+}
+
+async function openClientsContent() {
+  const contentDiv = document.getElementById("mainbody");
+  contentDiv.innerHTML = await fetchHtmlAsText("clients.html");
+  closeNav();
+}
+
+async function openContactContent() {
+  const contentDiv = document.getElementById("mainbody");
+  contentDiv.innerHTML = await fetchHtmlAsText("contact.html");
+  closeNav();
+}
+
+// Email contact form using mailto
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = "Inquiry from " + name + " regarding EIS SIF Data Team Offerings";
+  const message = document.getElementById("message").value;
+  const mailtostring = "mailto:larry.t.ratcliff.ctr@socom.mil?subject=" + subject + "&cc=" + email + "&body=" + message;
+  //window.open('mailto:larry.t.ratcliff.ctr@socom.mil?subject=' + subject + '&body=' + message);
+  window.open(mailtostring);
+}
+
 function vpcModal() {
     /// open modal describing VPC
     const modal = document.getElementById("vpcModal");
